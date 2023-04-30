@@ -1,0 +1,6 @@
+#promotion-component {
+    width: 100vw;
+    height: 420px;
+    background: var(--col-wb-4);
+    margin-bottom: 60px;
+}

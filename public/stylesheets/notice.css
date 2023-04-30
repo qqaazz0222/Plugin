@@ -1,0 +1,96 @@
+#notice-component {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: var(--max-width);
+    margin-bottom: 120px;
+}
+
+#notice-component .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--col-wb-3);
+}
+
+#notice-component .header .title {
+    font-weight: bold;
+    font-size: 36px;
+}
+
+#notice-component .header .detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--col-wb-2);
+    font-size: 16px;
+}
+
+#notice-component .body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#notice-component .body .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#notice-component .body .item {
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+    min-width: 240px;
+    height: 260px;
+}
+
+#notice-component .body .item .img {
+    display: block;
+    margin-bottom: 12px;
+    width: 100%;
+    height: 180px;
+    background: var(--col-wb-4);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#notice-component .body .item .img img {
+    width: 100%;
+    height: 100%;
+}
+
+#notice-component .body .item .badge {
+    margin-bottom: 12px;
+}
+
+#notice-component .body .item .badge span {
+    padding: 4px 8px;
+    background: var(--col-b-2);
+    border: 1px solid var(--col-b-3);
+    border-radius: 8px;
+    color: var(--col-b-1);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#notice-component .body .item .badge .important {
+    background: var(--col-b-0);
+    border: 1px solid var(--col-b-1);
+    color: var(--col-wb-5);
+}
+
+#notice-component .body .item .title {
+    margin-bottom: 8px;
+}
+
+#notice-component .body .item .wdate {
+    color: var(--col-wb-1);
+    font-size: 12px;
+}

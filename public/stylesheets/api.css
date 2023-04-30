@@ -1,0 +1,106 @@
+#api-component {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: var(--max-width);
+    margin-bottom: 120px;
+}
+
+#api-component .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--col-wb-3);
+}
+
+#api-component .header .title {
+    font-weight: bold;
+    font-size: 36px;
+}
+
+#api-component .header .detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--col-wb-2);
+    font-size: 16px;
+}
+
+#api-component .body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#api-component .body .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#api-component .body .opt {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#api-component .body .opt img {
+    margin-right: 12px;
+    width: 24px;
+    height: 24px;
+}
+
+#api-component .body .opt select {
+    padding: 8px 12px;
+    border: 1px solid var(--col-wb-3);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+#api-component .body .item {
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+    min-width: 240px;
+    height: 260px;
+}
+
+#api-component .body .item .badge {
+    margin-bottom: 12px;
+}
+
+#api-component .body .item .badge span {
+    padding: 4px 8px;
+    background: var(--col-b-2);
+    border: 1px solid var(--col-b-3);
+    border-radius: 8px;
+    color: var(--col-b-1);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#api-component .body .item .badge .important {
+    background: var(--col-b-0);
+    border: 1px solid var(--col-b-1);
+    color: var(--col-wb-5);
+}
+
+#api-component .body .item .title {
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#api-component .body .item .link {
+    color: var(--col-wb-1);
+    font-size: 12px;
+}

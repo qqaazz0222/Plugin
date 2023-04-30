@@ -1,0 +1,189 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('/fonts/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: light;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('/fonts/Pretendard-Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('/fonts/Pretendard-Bold.woff') format('woff');
+    font-weight: 900;
+    font-style: bold;
+}
+
+:root {
+    --max-width: 1280px;
+    --col-wb-0: #151516;
+    --col-wb-1: #6F6F70;
+    --col-wb-2: #A1A1A2;
+    --col-wb-3: #C5CAD5;
+    --col-wb-4: #F2F2F6;
+    --col-wb-5: #fefeff;
+    --col-b-0: #004FFF;
+    --col-b-1: #4C83FF;
+    --col-b-2: #CFDDFC;
+    --col-b-3: #F6F8FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Pretendard";
+}
+
+a {
+    color: var(--col-wb-0);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--col-wb-0);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    width: 100vw;
+    min-height: 100vh;
+    background: var(--col-wb-5);
+}
+
+#header-component {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    background: var(--col-wb-5);
+    border-bottom: 1px solid var(--col-wb-4);
+}
+
+#header-component .header-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 40px;
+    height: 80px;
+}
+
+#header-component .header-wrap .logo {
+    font-size: 32px;
+}
+
+#header-component .header-wrap .link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 280px;
+    color: var(--col-wb-0);
+    font-size: 16px;
+}
+
+#header-component .header-wrap .link {
+    font-size: 16px;
+    color: var(--col-wb-0);
+}
+
+#header-component .header-wrap .func {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+#header-component .header-wrap .func a {
+    margin-left: 4px;
+    padding: 9px 8px;
+    background: var(--col-b-2);
+    border: 1px solid var(--col-wb-5);
+    border-radius: 8px;
+    color: var(--col-b-0);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#header-component .header-wrap .func img {
+    width: 16px;
+    height: 16px;
+}
+
+#header-component .header-wrap .func #contact {}
+
+#header-component .header-wrap .func #sign {
+    background: var(--col-b-0);
+    border: 1px solid var(--col-b-1);
+    color: var(--col-wb-5);
+}
+
+#header-component .header-wrap .func #search {
+    background: var(--col-wb-5);
+    border: 1px solid var(--col-wb-5);
+    color: var(--col-wb-1);
+}
+
+#footer-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 600px;
+    background: var(--col-wb-0);
+}
+
+#footer-component .footer-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: var(--max-width);
+}
+
+#footer-component .footer-wrap .contact-msg {
+    margin-bottom: 40px;
+    color: var(--col-wb-5);
+    font-weight: bold;
+    font-size: 80px;
+}
+
+#footer-component .footer-wrap .contact-to {
+    margin-bottom: 20px;
+    color: var(--col-wb-5);
+    font-weight: bold;
+    font-size: 36px;
+}
+
+
+#footer-component .footer-wrap .company-wrap {
+    margin-bottom: 40px;
+    color: var(--col-wb-2);
+    font-size: 16px;
+}
+
+#footer-component .footer-wrap .company-wrap .logo {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+#footer-component .footer-wrap .company-wrap .help-num {
+    margin-bottom: 12px;
+}
+
+#footer-component .footer-wrap .company-wrap .help-time {
+    color: var(--col-wb-5);
+}
+
+#footer-component .footer-wrap #copyright {
+    color: var(--col-wb-1);
+}

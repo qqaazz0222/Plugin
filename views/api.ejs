@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+        <link rel="stylesheet" href="/stylesheets/setting.css" />
+        <link rel="stylesheet" href="/stylesheets/promotion.css" />
+        <link rel="stylesheet" href="/stylesheets/api.css" />
+    </head>
+    <body>
+        <%- include ./header%> <%- include ./promotion%>
+        <div id="api-component">
+            <div class="header">
+                <div class="title">공지 사항</div>
+                <a href="" class="detail"
+                    >더보기<img src="/images/icon-detail.png" alt="" srcset=""
+                /></a>
+            </div>
+            <div class="body">
+                <form class="row opt">
+                    <img src="/images/icon-filter.png" alt="" srcset="" />
+                    <select name="state" id="">
+                        <option value="">상태</option>
+                        <option value="">인기</option>
+                        <option value="">신규</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">국내 발송</option>
+                        <option value="">인기</option>
+                        <option value="">신규</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">국제 발송</option>
+                        <option value="">인기</option>
+                        <option value="">신규</option>
+                    </select>
+                </form>
+                <div class="row">
+                    <div class="item">
+                        <div class="badge">
+                            <span class="important">인기</span>
+                            <span>신규</span>
+                        </div>
+                        <div class="title">사이트명</div>
+                        <div class="link">www.site.com</div>
+                        <div class="in-price">
+                            <span>국내 발송</span><br />
+                            <span><strong>0.0</strong>원/건</span>
+                        </div>
+                        <div class="out-price">
+                            <span>국제 발송(미국)</span><br />
+                            <span><strong>0.000</strong>달러/건</span>
+                        </div>
+                        <a class="detail" href="">자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%- include ./footer%>
+    </body>
+</html>
