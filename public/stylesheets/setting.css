@@ -20,6 +20,7 @@
 }
 
 :root {
+    --min-width: 960px;
     --max-width: 1280px;
     --col-wb-0: #151516;
     --col-wb-1: #6F6F70;
