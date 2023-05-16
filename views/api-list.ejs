@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+        <link rel="stylesheet" href="/stylesheets/setting.css" />
+        <link rel="stylesheet" href="/stylesheets/api-list.css" />
+    </head>
+    <body>
+        <div id="header">
+            <div class="logo">
+                <img src="/images/logo.png" alt="" srcset="" />PlugInSMS
+            </div>
+            <div class="navlist">
+                <div class="navitem">
+                    API 목록
+                    <span class="sel"></span>
+                </div>
+                <div class="navitem">
+                    API 비교
+                    <span class="sel"></span>
+                </div>
+                <div class="navitem">
+                    내 API 관리
+                    <span class="sel"></span>
+                </div>
+            </div>
+            <div class="func">
+                <a href="" class="docs">개발자 문서</a>
+                <a href="" class="contact">고객 센터</a>
+                <a href="" class="sign">로그인</a>
+                <div class="divider"></div>
+                <img src="/images/icon-search.png" alt="" srcset="" />
+                <img src="/images/icon-menu.png" alt="" srcset="" />
+            </div>
+        </div>
+        <div id="navbar">
+            <div class="navi">
+                <div class="btn home">
+                    <img src="/images/icon-home.png" alt="" srcset="" />
+                </div>
+                <div class="tab">
+                    API 목록<img src="/images/icon-more.png" alt="" srcset="" />
+                </div>
+                <div class="tab">
+                    전체 API<img src="/images/icon-more.png" alt="" srcset="" />
+                </div>
+            </div>
+            <div class="func">
+                <div class="btn share">
+                    <img src="/images/icon-share.png" alt="" srcset="" />
+                </div>
+                <div class="btn print">
+                    <img src="/images/icon-print.png" alt="" srcset="" />
+                </div>
+            </div>
+        </div>
+        <div id="api-list">
+            <div class="header">
+                <div class="title">API 목록</div>
+            </div>
+            <div class="body">
+                <div class="tabbar">
+                    <div class="tab tab-sel">
+                        국내 발송
+                        <span class="sel"></span>
+                    </div>
+                    <div class="tab">
+                        국제 발송
+                        <span class="sel"></span>
+                    </div>
+                </div>
+                <div id="api-grid" class="api-list">
+                    <div class="api"></div>
+                    <div class="api"></div>
+                    <div class="api"></div>
+                    <div class="api"></div>
+                    <div class="api"></div>
+                    <div class="api"></div>
+                    <div class="api"></div>
+                    <div class="api"></div>
+                    <div class="api"></div>
+                    <div class="api"></div>
+                    <div class="api"></div>
+                    <div class="api"></div>
+                    <div class="api"></div>
+                    <div class="api"></div>
+                    <div class="api"></div>
+                    <div class="api"></div>
+                    <div class="api"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        var numApi = document.getElementsByClassName("api").length;
+        var numRow = Math.ceil(numApi / 4);
+        document.getElementById(
+            "api-grid"
+        ).style.gridTemplateRows = `repeat(${numRow}, 200px)`;
+    </script>
+</html>

@@ -1,190 +1,197 @@
+:root {
+    --min-width: 960px;
+    --max-width: 1280px;
+    --col-skyblue: #4DC0E8;
+    --col-blue: #039DD8;
+    --col-navy: #22207E;
+    --col-yellow: #FFC800;
+    --col-white: #FFFFFF;
+    --col-gray-1: #F7F7F7;
+    --col-gray-2: #DADADA;
+    --col-gray-3: #D9D9D9;
+    --col-gray-4: #B5B5B5;
+    --col-gray-5: #999999;
+    --col-gray-6: #777777;
+    --col-gray-7: #333333;
+    --col-gray-8: #222222;
+    --col-black: #000000;
+}
+
 @font-face {
-    font-family: 'Pretendard';
-    src: url('/fonts/Pretendard-Light.woff') format('woff');
-    font-weight: 300;
+    font-family: 'Leferi';
+    src: url('/fonts/LeferiPointWhite.ttf') format('truetype');
+    font-weight: 100;
     font-style: light;
 }
 
 @font-face {
-    font-family: 'Pretendard';
-    src: url('/fonts/Pretendard-Regular.woff') format('woff');
+    font-family: 'Leferi';
+    src: url('/fonts/LeferiPointSpecial.ttf') format('truetype');
+    font-weight: 300;
+    font-style: special;
+}
+
+@font-face {
+    font-family: 'Leferi';
+    src: url('/fonts/LeferiBaseRegular.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Pretendard';
-    src: url('/fonts/Pretendard-Bold.woff') format('woff');
-    font-weight: 900;
+    font-family: 'Leferi';
+    src: url('/fonts/LeferiBaseBold.ttf') format('truetype');
+    font-weight: 700;
     font-style: bold;
 }
 
-:root {
-    --min-width: 960px;
-    --max-width: 1280px;
-    --col-wb-0: #151516;
-    --col-wb-1: #6F6F70;
-    --col-wb-2: #A1A1A2;
-    --col-wb-3: #C5CAD5;
-    --col-wb-4: #F2F2F6;
-    --col-wb-5: #fefeff;
-    --col-b-0: #004FFF;
-    --col-b-1: #4C83FF;
-    --col-b-2: #CFDDFC;
-    --col-b-3: #F6F8FF;
+@font-face {
+    font-family: 'Leferi';
+    src: url('/fonts/LeferiPointBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: black;
+}
+
+@font-face {
+    font-family: 'Leferi-O';
+    src: url('/fonts/LeferiPointWhiteOblique.ttf') format('truetype');
+    font-weight: 300;
+    font-style: light;
+}
+
+@font-face {
+    font-family: 'Leferi-O';
+    src: url('/fonts/LeferiPointSpecialItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Leferi-O';
+    src: url('/fonts/LeferiPointBlackOblique.ttf') format('truetype');
+    font-weight: 700;
+    font-style: bold;
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: "Pretendard";
+    font-family: "Leferi";
 }
 
 a {
-    color: var(--col-wb-0);
+    color: var(--col-gray-8);
     text-decoration: none;
-}
-
-a:visited {
-    color: var(--col-wb-0);
 }
 
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 80px;
-    width: 100vw;
+    padding: 0 60px;
+    width: calc(100vw - 120px);
     min-height: 100vh;
-    background: var(--col-wb-5);
+    background: var(--col-white);
 }
 
-#header-component {
-    display: block;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    background: var(--col-wb-5);
-    border-bottom: 1px solid var(--col-wb-4);
-}
-
-#header-component .header-wrap {
+#header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0 40px;
-    height: 80px;
+    width: 100%;
+    height: 90px;
+    background: var(--col-white);
+    z-index: 1000;
 }
 
-#header-component .header-wrap .logo {
-    font-size: 32px;
-}
-
-#header-component .header-wrap .link {
+#header .logo {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    width: 280px;
-    color: var(--col-wb-0);
-    font-size: 16px;
+    font-family: 'Leferi-O';
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--col-navy);
 }
 
-#header-component .header-wrap .link {
-    font-size: 16px;
-    color: var(--col-wb-0);
+#header .logo img {
+    margin-right: 4px;
 }
 
-#header-component .header-wrap .func {
+#header .navlist {
     display: flex;
     flex-direction: row;
-    justify-content: end;
     align-items: center;
+    height: 100%;
 }
 
-#header-component .header-wrap .func a {
-    margin-left: 4px;
-    padding: 9px 8px;
-    background: var(--col-b-2);
-    border: 1px solid var(--col-wb-5);
-    border-radius: 8px;
-    color: var(--col-b-0);
-    font-size: 14px;
-    font-weight: bold;
-}
-
-#header-component .header-wrap .func img {
-    width: 16px;
-    height: 16px;
-}
-
-#header-component .header-wrap .func #contact {}
-
-#header-component .header-wrap .func #sign {
-    background: var(--col-b-0);
-    border: 1px solid var(--col-b-1);
-    color: var(--col-wb-5);
-}
-
-#header-component .header-wrap .func #search {
-    background: var(--col-wb-5);
-    border: 1px solid var(--col-wb-5);
-    color: var(--col-wb-1);
-}
-
-#footer-component {
+#header .navlist .navitem {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 600px;
-    background: var(--col-wb-0);
+    padding: 0 34px;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 900;
+
 }
 
-#footer-component .footer-wrap {
+#header .navlist .navitem .sel {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0px;
+    height: 5px;
+    background: var(--col-blue);
+    transform: translateX(-50%);
+    transition: width .5s;
+}
+
+#header .navlist .navitem:hover .sel {
+    width: 80px;
+}
+
+#header .func {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: var(--max-width);
-}
-
-#footer-component .footer-wrap .contact-msg {
-    margin-bottom: 40px;
-    color: var(--col-wb-5);
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
     font-weight: bold;
-    font-size: 80px;
+    color: var(--col-gray-8);
 }
 
-#footer-component .footer-wrap .contact-to {
-    margin-bottom: 20px;
-    color: var(--col-wb-5);
-    font-weight: bold;
-    font-size: 36px;
+#header .func .docs {
+    padding: 6px 20px;
+    border: 1px solid var(--col-blue);
+    border-radius: 100px;
+    color: var(--col-blue);
 }
 
-
-#footer-component .footer-wrap .company-wrap {
-    margin-bottom: 40px;
-    color: var(--col-wb-2);
-    font-size: 16px;
+#header .func .contact {
+    margin-left: 12px;
+    padding: 6px 20px;
+    border: 1px solid var(--col-gray-8);
+    border-radius: 100px;
 }
 
-#footer-component .footer-wrap .company-wrap .logo {
-    font-size: 32px;
-    margin-bottom: 12px;
+#header .func .sign {
+    margin-left: 28px;
 }
 
-#footer-component .footer-wrap .company-wrap .help-num {
-    margin-bottom: 12px;
+#header .func .divider {
+    width: 1px;
+    height: 28px;
+    background: #555555;
+    margin: 32px;
 }
 
-#footer-component .footer-wrap .company-wrap .help-time {
-    color: var(--col-wb-5);
+#header .func img {
+    margin-right: 28px;
 }
 
-#footer-component .footer-wrap #copyright {
-    color: var(--col-wb-1);
+#header .func img:last-child {
+    margin: 0;
 }

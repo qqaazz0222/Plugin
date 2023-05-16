@@ -1,0 +1,234 @@
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    font-size: 12px;
+    font-weight: 900;
+    z-index: 100;
+    transform: translateY(-50%);
+}
+
+#sidebar .dot {
+    margin: 16px 0;
+    width: 4px;
+    height: 4px;
+    border: 2px solid var(--col-gray-5);
+    border-radius: 4px;
+}
+
+#sidebar .sel {
+    background: var(--col-blue);
+    border: 2px solid var(--col-blue);
+    border-radius: 4px;
+}
+
+#sidebar .sel+.text {
+    display: flex;
+}
+
+#sidebar .text {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#promotion {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 600px;
+    background: var(--col-gray-4);
+    color: var(--col-white);
+}
+
+#promotion>* {
+    z-index: 1;
+}
+
+#promotion video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--col-black);
+    z-index: 0;
+}
+
+#promotion .screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--col-black);
+    opacity: .6;
+    z-index: 0;
+}
+
+
+#promotion .slogan {
+    margin-left: 6%;
+    font-size: 30px;
+}
+
+#promotion .company {
+    margin-left: 6%;
+    margin-bottom: 32px;
+    font-family: 'Leferi';
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 80px;
+}
+
+#promotion .search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 6%;
+    margin-bottom: 10px;
+    padding: 14px 0;
+    width: 480px;
+    border-bottom: 2px solid var(--col-white);
+}
+
+#promotion .search .api {
+    margin-right: 20px;
+    padding: 4px 16px;
+    background: var(--col-yellow);
+    border-radius: 100px;
+    font-family: 'Leferi';
+    font-size: 10px;
+    font-weight: 900;
+    color: var(--col-gray-8);
+}
+
+#promotion .search input {
+    flex: 1;
+    margin-right: 20px;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: var(--col-white);
+}
+
+#promotion .search input::placeholder {
+    color: #ffffffbb;
+}
+
+#promotion .search #btn-search {
+    width: 28px;
+    height: 28px;
+}
+
+#promotion .used {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin-left: 6%;
+    width: 480px
+}
+
+#promotion .used .btn-used {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 18px 16px;
+    background: var(--col-yellow);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#promotion .used .btn-used img {
+    margin-left: 6px;
+    width: 16px;
+    height: 16px;
+}
+
+#promotion .notice {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6%;
+    width: 480px;
+}
+
+#promotion .notice .title {
+    margin-bottom: 20px;
+    font-family: 'Leferi';
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#promotion .notice .list {
+    display: flex;
+    flex-direction: row;
+}
+
+#promotion .notice .list .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 100px;
+    border-left: 1px solid #ffffffbb;
+}
+
+#promotion .notice .list .item .text {
+    font-size: 18px;
+}
+
+#promotion .notice .list .item .date {
+    font-size: 12px;
+    font-weight: 300;
+    color: #ffffffbb;
+}
+
+#banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background: var(--col-blue);
+    color: var(--col-white);
+    font-size: 20px;
+    line-height: 20px;
+}
+
+#banner span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 8px;
+    width: 28px;
+    height: 28px;
+    background: var(--col-white);
+    border-radius: 14px;
+}
+
+#banner span img {
+    width: 16px;
+    height: 16px;
+}
+
+#sidebar .text span {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+#sidebar .text .hippen {
+    margin-top: 8px;
+    width: 1px;
+    height: 24px;
+    background: var(--col-gray-4);
+}

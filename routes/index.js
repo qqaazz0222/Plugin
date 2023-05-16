@@ -3,11 +3,11 @@ var router = express.Router();
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
-    res.render("index", { title: "PLUGINSMS" });
+    res.render("main", { title: "PLUGINSMS" });
 });
 
-router.get("/api", function (req, res, next) {
-    res.render("api", { title: "API 목록" });
+router.get("/api-list", function (req, res, next) {
+    res.render("api-list", { title: "API 목록" });
 });
 
 router.get("/introduce", function (req, res, next) {
