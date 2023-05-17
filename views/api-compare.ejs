@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+        <link rel="stylesheet" href="/stylesheets/setting.css" />
+        <link rel="stylesheet" href="/stylesheets/api-compare.css" />
+    </head>
+    <body>
+        <%- include header.ejs %>
+        <div id="navbar">
+            <div class="navi">
+                <div class="btn home">
+                    <img src="/images/icon-home.png" alt="" srcset="" />
+                </div>
+                <div class="tab">
+                    API 비교<img src="/images/icon-more.png" alt="" srcset="" />
+                </div>
+            </div>
+            <div class="func">
+                <div class="btn share">
+                    <img src="/images/icon-share.png" alt="" srcset="" />
+                </div>
+                <div class="btn print">
+                    <img src="/images/icon-print.png" alt="" srcset="" />
+                </div>
+            </div>
+        </div>
+        <div id="api-list">
+            <div class="header">
+                <div class="title">API 비교</div>
+            </div>
+            <div class="body">
+                <div class="compare left">
+                    <select name="api1" id="api1">
+                        <option value="" selected>
+                            ------------------ API 선택 ------------------
+                        </option>
+                        <% for(var i = 0; i < apiList.length; i++) { %>
+                        <option value="<%- i %>"><%- apiList[i] %></option>
+                        <% } %>
+                    </select>
+                </div>
+                <div class="mid">VS</div>
+                <div class="compare right">
+                    <select name="api1" id="api1">
+                        <option value="" selected>
+                            ------------------ API 선택 ------------------
+                        </option>
+                        <% for(var i = 0; i < apiList.length; i++) { %>
+                        <option value="<%- i %>"><%- apiList[i] %></option>
+                        <% } %>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

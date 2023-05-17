@@ -162,5 +162,92 @@ body {
 }
 
 #api-list .body .api-list .api {
-    border: 1px solid var(--col-gray-1);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid var(--col-gray-2);
+}
+
+#api-list .body .api-list .api .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#api-list .body .api-list .api img {
+    object-fit: none;
+    margin-bottom: 12px;
+    width: 100%;
+    height: 60px;
+}
+
+#api-list .body .api-list .api .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+#api-list .body .api-list .api .link {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--col-skyblue);
+}
+
+#api-list .body .api-list .api .tag {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    font-weight: 100;
+    color: var(--col-gray-4);
+    border-bottom: 1px solid var(--col-gray-2);
+}
+
+
+#api-list .body .api-list .api .price {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#api-list .body .api-list .api .price strong {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--col-blue);
+}
+
+#api-list .body .api-list .api .price span {
+    display: block;
+    margin: 0 8px;
+    width: 4px;
+    height: 16px;
+    background: var(--col-yellow);
+    transform: rotate(45deg);
+}
+
+#api-list .body .api-list .api .detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--col-gray-2);
+}
+
+#api-list .body .api-list .api .detail img {
+    width: 14px;
+    height: 14px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
 }

@@ -6,33 +6,7 @@
         <link rel="stylesheet" href="/stylesheets/api-list.css" />
     </head>
     <body>
-        <div id="header">
-            <div class="logo">
-                <img src="/images/logo.png" alt="" srcset="" />PlugInSMS
-            </div>
-            <div class="navlist">
-                <div class="navitem">
-                    API 목록
-                    <span class="sel"></span>
-                </div>
-                <div class="navitem">
-                    API 비교
-                    <span class="sel"></span>
-                </div>
-                <div class="navitem">
-                    내 API 관리
-                    <span class="sel"></span>
-                </div>
-            </div>
-            <div class="func">
-                <a href="" class="docs">개발자 문서</a>
-                <a href="" class="contact">고객 센터</a>
-                <a href="" class="sign">로그인</a>
-                <div class="divider"></div>
-                <img src="/images/icon-search.png" alt="" srcset="" />
-                <img src="/images/icon-menu.png" alt="" srcset="" />
-            </div>
-        </div>
+        <%- include header.ejs %>
         <div id="navbar">
             <div class="navi">
                 <div class="btn home">
@@ -70,23 +44,35 @@
                     </div>
                 </div>
                 <div id="api-grid" class="api-list">
-                    <div class="api"></div>
-                    <div class="api"></div>
-                    <div class="api"></div>
-                    <div class="api"></div>
-                    <div class="api"></div>
-                    <div class="api"></div>
-                    <div class="api"></div>
-                    <div class="api"></div>
-                    <div class="api"></div>
-                    <div class="api"></div>
-                    <div class="api"></div>
-                    <div class="api"></div>
-                    <div class="api"></div>
-                    <div class="api"></div>
-                    <div class="api"></div>
-                    <div class="api"></div>
-                    <div class="api"></div>
+                    <% for(var i = 0; i < apiName.length; i++){%>
+                    <div class="api">
+                        <img
+                            src="https://smartsms.aligo.in/img/landing/image/bi-aligo-sms.png"
+                            alt=""
+                        />
+                        <div class="title"><%- apiName[i] %></div>
+                        <a class="link" href="#"><%- apiURL[i] %></a>
+
+                        <div class="tag">
+                            <span>#가성비</span>
+                            <span>#안정적</span>
+                        </div>
+                        <div class="row">
+                            <div class="price">
+                                <strong>8.4원</strong>
+                                <span></span>건
+                            </div>
+                            <div class="detail">
+                                <img
+                                    src="/images/icon-link-b.png"
+                                    alt=""
+                                    srcset=""
+                                />
+                            </div>
+                        </div>
+                        <div class="func"></div>
+                    </div>
+                    <%}%>
                 </div>
             </div>
         </div>
@@ -96,6 +82,6 @@
         var numRow = Math.ceil(numApi / 4);
         document.getElementById(
             "api-grid"
-        ).style.gridTemplateRows = `repeat(${numRow}, 200px)`;
+        ).style.gridTemplateRows = `repeat(${numRow}, 280px)`;
     </script>
 </html>

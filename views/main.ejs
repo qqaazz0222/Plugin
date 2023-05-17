@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="/stylesheets/main.css" />
     </head>
     <body>
+        <%- include header.ejs %>
         <div id="sidebar">
             <div class="dot sel"></div>
             <div class="text">
@@ -24,36 +25,9 @@
                 <span>MAIN</span> <span class="hippen"></span>
             </div>
         </div>
-        <div id="header">
-            <div class="logo">
-                <img src="/images/logo.png" alt="" srcset="" />PlugInSMS
-            </div>
-            <div class="navlist">
-                <a class="navitem" href="api-list">
-                    API 목록
-                    <span class="sel"></span>
-                </a>
-                <a class="navitem">
-                    API 비교
-                    <span class="sel"></span>
-                </a>
-                <a class="navitem">
-                    내 API 관리
-                    <span class="sel"></span>
-                </a>
-            </div>
-            <div class="func">
-                <a href="" class="docs">개발자 문서</a>
-                <a href="" class="contact">고객 센터</a>
-                <a href="" class="sign">로그인</a>
-                <div class="divider"></div>
-                <img src="/images/icon-search.png" alt="" srcset="" />
-                <img src="/images/icon-menu.png" alt="" srcset="" />
-            </div>
-        </div>
         <div id="promotion">
             <video muted autoplay loop>
-                <source src="/videos/promotion.mp4" type="video/mp4" />
+                <source src="/videos/promotion1.mp4" type="video/mp4" />
             </video>
             <div class="screen"></div>
             <div class="slogan">Global Smart SMS Solution</div>
