@@ -6,6 +6,11 @@ router.get("/", function (req, res, next) {
     res.render("main", { title: "PLUGINSMS" });
 });
 
+router.post("/", function (req, res, next) {
+    console.log(req.body);
+    res.json({ msg: "Success!" });
+});
+
 router.get("/api-list", function (req, res, next) {
     const apiName = [
         "BulkSMSOnline",
