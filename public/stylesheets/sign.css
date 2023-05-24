@@ -14,11 +14,28 @@ body {
 .sign {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     padding: 60px;
     width: 560px;
     background: var(--col-white);
     border: 1px solid var(--col-gray-2);
+}
+
+.sign .home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 16px;
+    width: fit-content;
+    border-radius: 50px;
+    color: var(--col-blue);
+}
+
+.sign .home img {
+    width: 16px;
+    height: 16px;
+    transform: rotate(180deg);
+    margin-right: 8px;
 }
 
 .sign .title {
@@ -106,6 +123,11 @@ body {
     padding: 2px 20px;
     border-right: 1px solid var(--col-gray-2);
     color: var(--col-gray-6);
+    text-align: right;
+}
+
+.sign .func a:last-child {
+    text-align: left;
 }
 
 .sign .func a:last-child {
