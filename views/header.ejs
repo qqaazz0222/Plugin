@@ -1,3 +1,14 @@
+<div id="search">
+    <form action="search" method="post">
+        <input
+            type="text"
+            name="searchKey"
+            id=""
+            placeholder="검색어를 입력해주세요."
+        />
+        <button type="submit">검색</button>
+    </form>
+</div>
 <div id="header">
     <a class="logo" href="/">
         <img src="/images/logo.png" alt="" srcset="" />PlugInSMS
@@ -19,9 +30,22 @@
     <div class="func">
         <a href="" class="docs">개발자 문서</a>
         <a href="" class="contact">고객 센터</a>
-        <a href="" class="sign">로그인</a>
+        <a href="sign" class="sign">로그인</a>
         <div class="divider"></div>
-        <img src="/images/icon-search.png" alt="" srcset="" />
+        <img id="btn-search" src="/images/icon-search.png" onclick="search()" />
         <img src="/images/icon-menu.png" alt="" srcset="" />
     </div>
 </div>
+<script>
+    let visibleSearch = false;
+    function search() {
+        const target = document.getElementById("search");
+        if (visibleSearch) {
+            target.style.display = "none";
+            visibleSearch = false;
+        } else {
+            target.style.display = "flex";
+            visibleSearch = true;
+        }
+    }
+</script>

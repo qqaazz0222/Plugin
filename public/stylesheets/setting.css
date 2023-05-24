@@ -88,8 +88,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 60px;
-    width: calc(100vw - 120px);
+    width: 100vw;
     min-height: 100vh;
     background: var(--col-white);
 }
@@ -194,4 +193,47 @@ body {
 
 #header .func img:last-child {
     margin: 0;
+}
+
+#search {
+    position: fixed;
+    top: 90px;
+    left: 0px;
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    background: rgba(0, 0, 10, 0.3);
+    z-index: 999;
+}
+
+#search form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 36px 0;
+    width: 100vw;
+    background: var(--col-gray-1);
+}
+
+#search input {
+    padding: 20px 28px;
+    width: 30%;
+    min-width: 320px;
+    font-size: 16px;
+    color: var(--col-black);
+    border: 1px solid var(--col-gray-4);
+    outline: none;
+}
+
+#search button {
+    padding: 21px 28px;
+    background: var(--col-yellow);
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 700;
 }
